@@ -1,3 +1,6 @@
+/*-- Сортировка массивов по методу СЛИЯНИЯ
+(задача №1 в домашней работе) --*/
+
 #include <iostream>
 #include <vector>
 #include <Windows.h>
@@ -12,7 +15,7 @@ vector<int> reverseNumbers2{0, 0, 0};
 vector<int> numbers3{24, 66, 20, 79, 30, 16, 19, 62, 94, 59, 0, 7, 59, 90, 84, 60, 95, 62};
 vector<int> reverseNumbers3{0, 0, 0};
 
-void merge_sort(vector<int> &numbers, vector<int> &reverseNumbers)
+void merge_sort(vector<int> &numbers, vector<int> &reverseNumbers) // подпрограмма сортировки массива с помощью слияния
 {
   if (numbers.size() == 0) // если длина исходного массива == 0(он пустой), ...
   {
